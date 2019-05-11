@@ -30,14 +30,10 @@ public class Prefeitura {
                 }
                 System.out.println("Seu salario é " + salario + "\nA média atual é " + mediaSalario + "\nMédia de número de filhos é " + mediaFilho + "\nMaior salario é " + maiorSalario);
                 if(salario <= 150){
-                pessoas = pessoas + 1;
+                pessoas++;
+                }
                 percentualMenor150 = (pessoas*100) / atual;
                 System.out.println("Percentual com menor de 150 reais é " + percentualMenor150 + "%");
-                }
-                else{
-                    percentualMenor150 = (pessoas*100) / atual;
-                    System.out.println("Percentual com menor de 150 reais é " + percentualMenor150 + "%");
-                }
                 System.out.println("Deseja cadastrar um novo usuario? \n 1 para sim");
                 cadastrarNovo = leia.nextInt();
                 if(cadastrarNovo == 0){
