@@ -13,7 +13,7 @@ public class Array {
         String[] nomes = new String[totalParticipantes];
         for(int i = 0; i < totalParticipantes; i++){
             participante = i + 1;
-            System.out.println("Qual o nome do " + participante + " participante");
+            System.out.println("Qual o nome do " + participante + "º participante");
             nomes[i] = leia.next();
         }
         Random r = new Random();
