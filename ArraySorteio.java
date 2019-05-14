@@ -1,9 +1,9 @@
-package array;
+package sorteio;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Array {
+public class Sorteio {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
@@ -15,10 +15,17 @@ public class Array {
             participante = i + 1;
             System.out.println("Qual o nome do " + participante + "º participante");
             nomes[i] = leia.next();
+            for(int b = 0; b < totalParticipantes; b++){
+                    if(b < i){
+                    if(nomes[i].equals(nomes[b])){
+                        System.out.println("Esse nome já existe tente novamente :)");
+                    }
+                    }
+            }
         }
         Random r = new Random();
-        int idx = r.nextInt(nomes.length);
-        System.out.println("O ganhador é " + nomes[idx]);
+        int ganhador = r.nextInt(nomes.length);
+        System.out.println("O ganhador é " + nomes[ganhador]);
     }
     
 }
