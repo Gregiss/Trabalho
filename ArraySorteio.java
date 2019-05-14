@@ -17,8 +17,10 @@ public class Sorteio {
             nomes[i] = leia.next();
             for(int b = 0; b < totalParticipantes; b++){
                     if(b < i){
-                    if(nomes[i].equals(nomes[b])){
-                        System.out.println("Esse nome já existe tente novamente :)");
+                    while(nomes[i].equals(nomes[b])){
+                        System.out.println("Esse nome já existe tente novamente :) ");
+                        System.out.println("Qual o nome do " + participante + "º participante");
+                        nomes[i] = leia.next();
                     }
                     }
             }
