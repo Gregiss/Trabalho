@@ -6,7 +6,7 @@ public class LeituraNome {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int pessoasCount = 5;
+        int pessoasCount = 10;
         String names[] = new String[pessoasCount];
         boolean achei = false;
         for(int i = 0; i < names.length; i++){
