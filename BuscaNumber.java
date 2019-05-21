@@ -9,6 +9,7 @@ public class BuscaNumber {
         int numberCount = 10;
         int number[] = new int[numberCount];
         boolean achei = false;
+        int posicao = 0;
         for(int i = 0; i < number.length; i++){
             System.out.println("Escreva um numero");
             number[i] = leia.nextInt();
@@ -20,15 +21,23 @@ public class BuscaNumber {
                 for(int b = 0; b < number.length; b++){
                     if(numberBusca == number[b]){
                         achei = true;
+                        posicao = b;
                         break;
                     }
                 }
             }
         }
         if(achei){
-            System.out.println("Achei :D");
+            System.out.println("Existe :D");
+            for(int i = 0; i < number.length; i++){
+                if(i == posicao){
+                    System.out.println("");
+                } else {
+                    System.out.println(number[i]);
+                }
+            }
         } else{
-            System.out.println("Não achei :C");
+            System.out.println("Não existe :C");
         }
     }
     
