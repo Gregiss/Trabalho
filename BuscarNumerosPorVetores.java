@@ -13,9 +13,9 @@ public class Vetor {
         int total = (a.length - 1);
         for(int i = 0; i < a.length;i++){
             System.out.println("Informe um número");
-            x = leia.nextInt();
-            System.out.println("Informe mais um número");
             a[i] = leia.nextInt();
+            System.out.println("Informe mais um número");
+            x = leia.nextInt();
             calculoM[i] = a[i] * x;
             System.out.println(calculoM[i]);
             if(i >= total){
