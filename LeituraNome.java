@@ -6,30 +6,32 @@ public class LeituraNome {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int pessoasCount = 11;
+        int pessoasCount = 5;
         String names[] = new String[pessoasCount];
-        for(int i = 0; i < 11; i++){
+        boolean achei = false;
+        for(int i = 0; i < names.length; i++){
             System.out.println("Escreva um nome \nOu digite sair para fechar o programa");
             names[i] = leia.next();
+            int total = names.length - 1;
             if(names[i].equals("sair")){
                 System.out.println("Finalizado");
                 break;
-            } else if(i >= 10){
-                System.out.println("Legal cheguei ao número 10\n Escreva um nome que talvez esteja na lista");
+            } else if(i >= total){
+                System.out.println("Legal cheguei ao número " + names.length + "\n Escreva um nome que talvez esteja na lista");
                 String nomeBusca = leia.next();
                 System.out.println("Olha oque eu achei :D");
-                for(int b = 0; b < 11; b++){
-                    while(true){
+                for(int b = 0; b < names.length; b++){
                     if(nomeBusca.equals(names[b])){
-                        System.out.println(nomeBusca + " = " + names[b] + ": Achei :D");
+                        achei = true;
                         break;
-                    } else{
-                        System.out.println(nomeBusca + " = " + names[b] + ": Não achei :C");
-                        break;
-                    }
                     }
                 }
             }
+        }
+        if(achei){
+            System.out.println("Achei :D");
+        } else{
+            System.out.println("Nãa achei :C");
         }
     }
     
