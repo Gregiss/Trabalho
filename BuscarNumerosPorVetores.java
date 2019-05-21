@@ -1,30 +1,43 @@
-package vetor;
+package buscanumber;
 
 import java.util.Scanner;
 
-public class Vetor {
+public class BuscaNumber {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int[] a = new int[11];
-        int x;
-        int[] m = new int[11];
-        int[] calculoM = new int[11];
-        int total = (a.length - 1);
-        for(int i = 0; i < a.length;i++){
-            System.out.println("Informe um número");
-            a[i] = leia.nextInt();
-            System.out.println("Informe mais um número");
-            x = leia.nextInt();
-            calculoM[i] = a[i] * x;
-            System.out.println(calculoM[i]);
+        int numberCount = 10;
+        int number[] = new int[numberCount];
+        boolean achei = false;
+        int posicao = 0;
+        for(int i = 0; i < number.length; i++){
+            System.out.println("Escreva um numero");
+            number[i] = leia.nextInt();
+            int total = number.length - 1;
             if(i >= total){
-                System.out.println("Todos os resultados da soma");
-                for(int b = 0; b < a.length; b++){
-                    System.out.println("Soma " + (b + 1) + "|" + calculoM[i]);
+                System.out.println("Legal cheguei ao número " + number.length + "\n Escreva um nome que talvez esteja na lista");
+                int numberBusca = leia.nextInt();
+                System.out.println("Olha oque eu achei :D");
+                for(int b = 0; b < number.length; b++){
+                    if(numberBusca == number[b]){
+                        achei = true;
+                        posicao = number[b];
+                        break;
+                    }
                 }
-                break; 
             }
+        }
+        if(achei){
+            System.out.println("Existe :D");
+            for(int i = 0; i < number.length; i++){
+                System.out.println("Informe um numero");
+                number[i] = leia.nextInt();
+                while(number[i] == posicao){
+                    number[i] = 0;
+                }
+            }
+        } else{
+            System.out.println("Não existe :C");
         }
     }
     
