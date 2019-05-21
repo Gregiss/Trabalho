@@ -10,7 +10,7 @@ public class BuscaNumber {
         int number[] = new int[numberCount];
         boolean achei = false;
         for(int i = 0; i < number.length; i++){
-            System.out.println("Escreva um numbero \nOu digite sair para fechar o programa");
+            System.out.println("Escreva um numero \nOu digite sair para fechar o programa");
             number[i] = leia.nextInt();
             int total = number.length - 1;
             if(i >= total){
