@@ -6,7 +6,7 @@ public class BuscaNumber {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int numberCount = 20;
+        int numberCount = 10;
         int number[] = new int[numberCount];
         boolean achei = false;
         int posicao = 0;
@@ -31,7 +31,7 @@ public class BuscaNumber {
             System.out.println("Existe :D");
             for(int i = 0; i < number.length; i++){
                 if(i == posicao){
-                    System.out.println("");
+                    System.out.println("---------------");
                 } else {
                     System.out.println(number[i]);
                 }
