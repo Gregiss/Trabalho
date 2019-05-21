@@ -6,7 +6,7 @@ public class BuscaNumber {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int numberCount = 10;
+        int numberCount = 20;
         int number[] = new int[numberCount];
         boolean achei = false;
         int posicao = 0;
