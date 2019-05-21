@@ -21,7 +21,7 @@ public class BuscaNumber {
                 for(int b = 0; b < number.length; b++){
                     if(numberBusca == number[b]){
                         achei = true;
-                        posicao = number[b];
+                        posicao = b;
                         break;
                     }
                 }
@@ -30,10 +30,8 @@ public class BuscaNumber {
         if(achei){
             System.out.println("Existe :D");
             for(int i = 0; i < number.length; i++){
-                System.out.println("Informe um numero");
-                number[i] = leia.nextInt();
-                while(number[i] == posicao){
-                    number[i] = 0;
+                if(i == posicao){
+                    System.out.println("\n");
                 }
             }
         } else{
