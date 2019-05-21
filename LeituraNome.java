@@ -31,7 +31,7 @@ public class LeituraNome {
         if(achei){
             System.out.println("Achei :D");
         } else{
-            System.out.println("Nãa achei :C");
+            System.out.println("Não achei :C");
         }
     }
     
