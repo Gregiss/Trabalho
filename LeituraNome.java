@@ -11,14 +11,14 @@ public class LeituraNome {
         boolean achei = false;
         for(int i = 0; i < names.length; i++){
             System.out.println("Escreva um nome \nOu digite sair para fechar o programa");
-            names[i] = leia.next();
+            names[i] = leia.nextLine();
             int total = names.length - 1;
             if(names[i].equals("sair")){
                 System.out.println("Finalizado");
                 break;
             } else if(i >= total){
                 System.out.println("Legal cheguei ao número " + names.length + "\n Escreva um nome que talvez esteja na lista");
-                String nomeBusca = leia.next();
+                String nomeBusca = leia.nextLine();
                 System.out.println("Olha oque eu achei :D");
                 for(int b = 0; b < names.length; b++){
                     if(nomeBusca.equals(names[b])){
