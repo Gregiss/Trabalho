@@ -10,7 +10,7 @@ public class LeituraNome {
         String names[] = new String[pessoasCount];
         boolean achei = false;
         for(int i = 0; i < names.length; i++){
-            System.out.println("Escreva um nome \nOu digite sair para fechar o programa");
+            System.out.println("Informe o " + (i + 1)+ "º nome\nOu digite sair para fechar o programa");
             names[i] = leia.nextLine();
             int total = names.length - 1;
             if(names[i].equals("sair")){
