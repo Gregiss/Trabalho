@@ -24,7 +24,8 @@ public class BuscaNumber {
                 posicao = i;
                 break;
             }
-        } 
+        }
+        System.out.println("--------------------------------");
         //Popula vetor B
         int indiceAlternativo = 0;
         for(int i = 0; i < b.length; i++){
