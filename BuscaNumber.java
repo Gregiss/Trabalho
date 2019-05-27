@@ -15,7 +15,7 @@ public class BuscaNumber {
             number[i] = leia.nextInt();
             int total = number.length - 1;
             if(i >= total){
-                System.out.println("Legal cheguei ao número " + number.length + "\n Escreva um nome que talvez esteja na lista");
+                System.out.println("Legal cheguei ao número " + number.length + "\n Escreva um nome que deseja eliminar");
                 int numberBusca = leia.nextInt();
                 System.out.println("Olha oque eu achei :D");
                 for(int b = 0; b < number.length; b++){
@@ -28,7 +28,7 @@ public class BuscaNumber {
             }
         }
         if(achei){
-            System.out.println("Existe :D");
+            System.out.println("Elimei :D");
             for(int i = 0; i < number.length; i++){
                 if(i == posicao){
                     System.out.println("-");
