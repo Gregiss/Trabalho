@@ -16,17 +16,16 @@ public class LeituraNome {
             if(names[i].equals("sair")){
                 System.out.println("Finalizado");
                 break;
-            } else if(i >= total){
-                System.out.println("Legal cheguei ao número " + names.length + "\n Escreva um nome que talvez esteja na lista");
-                String nomeBusca = leia.nextLine();
-                System.out.println("Olha oque eu achei :D");
-                for(int b = 0; b < names.length; b++){
-                    if(nomeBusca.equals(names[b])){
-                        achei = true;
-                        break;
-                    }
-                }
             }
+        }
+        System.out.println("Legal cheguei ao número " + names.length + "\n Escreva um nome que talvez esteja na lista");
+            String nomeBusca = leia.nextLine();
+            System.out.println("Olha oque eu achei :D");
+            for(int b = 0; b < names.length; b++){
+                if(nomeBusca.equals(names[b])){
+                    achei = true;
+                   break;
+                }
         }
         if(achei){
             System.out.println("Achei :D");
