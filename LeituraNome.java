@@ -18,6 +18,7 @@ public class LeituraNome {
                 break;
             }
         }
+        //Pesquisa nome entre array
         System.out.println("Legal cheguei ao número " + names.length + "\n Escreva um nome que talvez esteja na lista");
             String nomeBusca = leia.nextLine();
             System.out.println("Olha oque eu achei :D");
@@ -27,6 +28,7 @@ public class LeituraNome {
                    break;
                 }
         }
+        //Informa se achou ou não achou o nome
         if(achei){
             System.out.println("Achei :D");
         } else{
