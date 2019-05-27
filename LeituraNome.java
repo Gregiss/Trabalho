@@ -22,10 +22,10 @@ public class LeituraNome {
         System.out.println("Legal cheguei ao número " + names.length + "\n Escreva um nome que talvez esteja na lista");
             String nomeBusca = leia.nextLine();
             System.out.println("Olha oque eu achei :D");
-            for(int b = 0; b < names.length; b++){
-                if(nomeBusca.equals(names[b])){
+            for (String name : names) {
+                if (nomeBusca.equals(name)) {
                     achei = true;
-                   break;
+                    break;
                 }
         }
         //Informa se achou ou não achou o nome
