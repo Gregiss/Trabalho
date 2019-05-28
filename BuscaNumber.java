@@ -32,8 +32,9 @@ public class BuscaNumber {
             if(indiceAlternativo == posicao){
                 indiceAlternativo++;
             }
+            
             b[i] = a[indiceAlternativo];
-            System.out.println(b[indiceAlternativo]);
+            System.out.println(a[indiceAlternativo]);
             indiceAlternativo++;
         }
         
