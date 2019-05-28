@@ -33,7 +33,7 @@ public class BuscaNumber {
                 indiceAlternativo++;
             }
             b[i] = a[indiceAlternativo];
-            System.out.println(a[indiceAlternativo]);
+            System.out.println(b[indiceAlternativo]);
             indiceAlternativo++;
         }
         
