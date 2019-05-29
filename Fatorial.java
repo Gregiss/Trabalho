@@ -12,7 +12,7 @@ public class Fatorial {
         for(int i = number; i >= 1; i--){
             fatorial = fatorial * i;
         }
-        fatorial = (fatorial * 20 / 100);
+        fatorial = (fatorial * 20) / 100;
         System.out.println(fatorial);
     }
     
