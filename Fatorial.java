@@ -12,12 +12,13 @@ public class Fatorial {
         int menor = number;
         for(int i = 1; i <= number; i++){
             numeroCalculo = numeroCalculo * i;
-            if(i < number){
-            menor--;
-            System.out.print(number + " * " + menor + " ");
-            }
         }
-        System.out.print("Resultado : " + numeroCalculo + "\n");
+        System.out.print(number);
+        for(int i = 1; i <= number; i++){
+            menor--;
+            System.out.print(" * " + menor + " ");
+        }
+        System.out.print("= " + numeroCalculo + "\n");
     }
     
 }
