@@ -8,19 +8,12 @@ public class Fatorial {
         Scanner leia = new Scanner(System.in);
         System.out.println("Informeu um número");
         int number = leia.nextInt();
-        int numeroCalculo = 1;
-        int menor = number;
-        for(int i = 1; i <= number; i++){
-            numeroCalculo = numeroCalculo * i;
+        int fatorial = 1;
+        for(int i = number; i >= 1; i--){
+            fatorial = fatorial * i;
         }
-        System.out.print(number);
-        for(int i = 1; i <= number; i++){
-            menor--;
-            if(i < number){
-                System.out.print(" * " + menor + " ");
-            }
-        }
-        System.out.print("= " + numeroCalculo + "\n");
+        fatorial = (fatorial * 20 / 100);
+        System.out.println(fatorial);
     }
     
 }
