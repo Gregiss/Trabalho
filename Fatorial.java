@@ -16,7 +16,9 @@ public class Fatorial {
         System.out.print(number);
         for(int i = 1; i <= number; i++){
             menor--;
-            System.out.print(" * " + menor + " ");
+            if(i < 5){
+                System.out.print(" * " + menor + " ");
+            }
         }
         System.out.print("= " + numeroCalculo + "\n");
     }
