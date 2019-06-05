@@ -6,13 +6,11 @@ public class Matrizes {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int linhas = 0;
-        int colunas = 0;
         int numeroX = 0;
         System.out.println("Informe a quantidade de linhas da matriz");
-        linhas = leia.nextInt();
+        final int linhas = leia.nextInt();
         System.out.println("Informe a quantidade de colunas da matriz");
-        colunas = leia.nextInt();
+        final int colunas = leia.nextInt();
         System.out.println("Informe o número X");
         numeroX = leia.nextInt();
         int[][] matrizA = new int[linhas][colunas];
@@ -28,9 +26,9 @@ public class Matrizes {
                 matrizB[linha][coluna] = numeroX * matrizA[linha][coluna];
             }
         }
-        for(int linha = 0; linha < matrizB.length; linha++){
-            for(int coluna = 0; coluna < matrizB[linha].length; coluna++){
-                System.out.print(matrizB[linha][coluna] + "\t");
+        for (int[] matrizB1 : matrizB) {
+            for (int coluna = 0; coluna < matrizB1.length; coluna++) {
+                System.out.print(matrizB1[coluna] + "\t");
             }
             System.out.println("");
         }
