@@ -27,7 +27,7 @@ public class Matrizes {
         for(int linha = 0; linha < matrizA.length; linha++){
             for(int coluna = 0; coluna < matrizA[linha].length; coluna++){
                 matrizC[linha][coluna] = 0;
-                for(int aux = 0; aux < matrizA[linha].length; aux++){
+                for(int aux = 0; aux < matrizA.length; aux++){
                 matrizC[linha][coluna] += matrizB[linha][aux] * matrizA[aux][coluna];
                 }
             }
