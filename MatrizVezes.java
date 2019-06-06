@@ -23,7 +23,7 @@ public class Matrizes {
             for(int coluna = 0; coluna < matrizA[linha].length; coluna++){
                 matrizC[linha][coluna] = 0;
                 for(int aux = 0; aux < matrizA.length; aux++){
-                matrizC[linha][coluna] += matrizB[linha][aux] * matrizA[aux][coluna];
+                matrizC[linha][coluna] = matrizC[linha][coluna] + matrizA[linha][aux] * matrizB[aux][coluna];
                 }
             }
         }
