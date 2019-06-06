@@ -32,7 +32,7 @@ public class ParesImpares {
             System.out.println("");
         }
         
-        System.out.println("Quantidade de par é " + quantidadePar + "\n" + "Quantidade de impar é " + quantidadeImpar);
+        System.out.println("Quantidade de par é " + quantidadePar + "\n" + "Quantidade de impar é " + quantidadeImpar + "\n");
     }
     
 }
