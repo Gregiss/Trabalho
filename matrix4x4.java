@@ -21,6 +21,13 @@ public class Matrix4x4 {
             }
         }
         
+        for(int linha = 0; linha < matriz.length; linha++){
+            for(int coluna = 0; coluna < matriz[linha].length; coluna++){
+                System.out.print(matriz[linha][coluna] +"\t");
+            }
+            System.out.println("");
+        }
+        
         System.out.print("O maior número é => " + maiorNumero + " na posição " + "[" + posicaoLinha + "]" + "[" + posicaoColuna + "]");
             
         
