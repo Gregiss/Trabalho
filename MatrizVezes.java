@@ -5,14 +5,9 @@ import java.util.Scanner;
 public class Matrizes {
 
     public static void main(String[] args) {
-        Scanner leia = new Scanner(System.in);
-        System.out.println("Informe a quantidade de linhas da matriz");
-        final int linhas = leia.nextInt();
-        System.out.println("Informe a quantidade de colunas da matriz");
-        final int colunas = leia.nextInt();
-        int[][] matrizA = new int[linhas][colunas];
-        int[][] matrizB = new int[linhas][colunas];
-        int[][] matrizC = new int[linhas][colunas];
+        int[][] matrizA = new int[2][2];
+        int[][] matrizB = new int[2][2];
+        int[][] matrizC = new int[2][2];
         
         matrizA[0][0] = 1;
         matrizA[0][1] = 2;
