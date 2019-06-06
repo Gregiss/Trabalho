@@ -24,23 +24,23 @@ public class MenorNumeroMatriz {
                 matriz[linha][coluna] = aleatorio.nextInt(10);
                 if(matriz[5][coluna] > maiorNumero){
                     maiorNumero = matriz[5][coluna];
-                    posicaoLinha2 = 5;
+                    posicaoLinha2 = linha;
                     posicaoColuna2 = coluna;
                 }
                 else if(matriz[linha][7] > maiorNumero2){
-                    maiorNumero2 = matriz[linha][7];
-                    posicaoLinha3 = 5;
+                    maiorNumero2 = matriz[linha][coluna];
+                    posicaoLinha3 = linha;
                     posicaoColuna3 = coluna;
                 }
                 else if(matriz[5][coluna] < menorNumero){
-                    menorNumero = matriz[5][coluna];
-                    posicaoLinha = 5;
+                    menorNumero = matriz[linha][coluna];
+                    posicaoLinha = linha;
                     posicaoColuna = coluna;
                 }
                 else if(matriz[linha][7] < menorNumero2){
-                    menorNumero2 = matriz[linha][7];
+                    menorNumero2 = matriz[linha][coluna];
                     posicaoLinha4 = linha;
-                    posicaoColuna4 = 7;
+                    posicaoColuna4 = coluna;
                 }
             }
         }
