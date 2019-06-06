@@ -28,7 +28,7 @@ public class Matrix4x4 {
             System.out.println("");
         }
         
-        System.out.print("O maior número é => " + maiorNumero + " na posição " + "[" + posicaoLinha + "]" + "[" + posicaoColuna + "]");
+        System.out.print("O maior número é => " + maiorNumero + " na posição " + "[" + posicaoLinha + "]" + "[" + posicaoColuna + "]\n");
             
         
     }
