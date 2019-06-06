@@ -10,7 +10,7 @@ public class MenorNumeroMatriz {
         int maiorNumero = -1;
         int posicaoLinha = -1;
         int posicaoColuna = -1;
-        int menorNumero = -1;
+        int menorNumero = 11;
         int posicaoLinha2 = -1;
         int posicaoColuna2 = -1;
         for(int linha = 0; linha < matriz.length; linha++){
