@@ -29,6 +29,12 @@ public class MenorNumeroMatriz {
             }
         }
         
+        for(int linha = 0; linha < matriz.length; linha++){
+            for(int coluna = 0; coluna < matriz[linha].length; coluna++){
+                System.out.println("[" + linha + "]" + "[" + coluna + "] => " + matriz[linha][coluna]);
+            }
+        }
+        
         System.out.print("O maior número é => " + maiorNumero + " na posição " + "[" + posicaoLinha + "]" + "[" + posicaoColuna + "]\n");
         System.out.print("O menor número é => " + menorNumero + " na posição " + "[" + posicaoLinha2 + "]" + "[" + posicaoColuna2 + "]\n");
             
