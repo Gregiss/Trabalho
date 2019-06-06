@@ -6,7 +6,6 @@ public class Matrizes {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int numeroX = 0;
         System.out.println("Informe a quantidade de linhas da matriz");
         final int linhas = leia.nextInt();
         System.out.println("Informe a quantidade de colunas da matriz");
