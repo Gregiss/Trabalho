@@ -24,6 +24,14 @@ public class ParesImpares {
                 }
             }
         }
+        
+        for(int linha = 0; linha < matriz.length; linha++){
+            for(int coluna = 0; coluna < matriz[linha].length; coluna++){
+                System.out.print(matriz[linha][coluna] +"\t");
+            }
+            System.out.println("");
+        }
+        
         System.out.println("Quantidade de par é " + quantidadePar + "\n" + "Quantidade de impar é " + quantidadeImpar);
     }
     
