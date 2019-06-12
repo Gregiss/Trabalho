@@ -59,6 +59,9 @@ public class JogoDaVelha {
                 } else if(matriz[0][1] == 2 & matriz[1][1] == 2 & matriz[2][1] == 2){
                     System.out.println("Jogador O ganhou");
                     break;
+                } else if(matriz[2][0] == 2 & matriz[1][1] == 2 & matriz[0][2] == 2){
+                    System.out.println("Jogador X ganhou");
+                    break;
                 }
                 //Logica
                 System.out.println("-----------------\n");
