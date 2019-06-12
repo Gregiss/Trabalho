@@ -22,7 +22,7 @@ public class JogoDaVelha {
                     }
                     System.out.println("");
                 }
-                //Verificar se algum jogador X ganhou
+                //Verificar se jogador X ganhou
                 if(matriz[0][0] == 1 & matriz[0][1] == 1 & matriz[0][2] == 1){
                     System.out.println("Jogador X ganhou");
                     break;
@@ -40,7 +40,6 @@ public class JogoDaVelha {
                     break;
                 }
                 //Verificar se o jogador O ganhou
-                //Verificar se algum jogador ganhou
                 if(matriz[0][0] == 2 & matriz[0][1] == 2 & matriz[0][2] == 2){
                     System.out.println("Jogador O ganhou");
                     break;
