@@ -12,12 +12,13 @@ public class JogoDaVelha {
             for(int coluna = 0; coluna < matriz[linha].length; coluna++){
                 for(int i = 0; i < matriz.length; i++){
                     for(int b = 0; b < matriz[i].length; b++){
+                        System.out.print(b);
                         if(matriz[i][b] == 1){
-                            System.out.print("X \t");
+                            System.out.print(i +"| X \t");
                         } else if(matriz[i][b] == 2){
-                            System.out.print("O \t");
+                            System.out.print(i +"| O \t");
                         } else{
-                            System.out.print("- \t");
+                            System.out.print(i +"| - \t");
                         }
                     }
                     System.out.println("");
@@ -68,6 +69,22 @@ public class JogoDaVelha {
                 linhas = leia.nextInt();
                 System.out.println("Informe um número para coluna");
                 colunas = leia.nextInt();
+                while(linhas > 2 & colunas > 2){
+                    System.out.println("Ocorreu um erro");
+                    System.out.println("-----------------\n");
+                    System.out.println("Informe um número para linha");
+                    linhas = leia.nextInt();
+                    System.out.println("Informe um número para coluna");
+                    colunas = leia.nextInt();
+                }
+                while(matriz[linhas][colunas] == 1 & matriz[linhas][colunas] == 2){
+                    System.out.println("Já jogaste aqui");
+                    System.out.println("-----------------\n");
+                    System.out.println("Informe um número para linha");
+                    linhas = leia.nextInt();
+                    System.out.println("Informe um número para coluna");
+                    colunas = leia.nextInt();
+                }
                 if(vez == 1){
                  matriz[linhas][colunas] = 1;
                  vez = 2;
