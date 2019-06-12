@@ -12,13 +12,12 @@ public class JogoDaVelha {
             for(int coluna = 0; coluna < matriz[linha].length; coluna++){
                 for(int i = 0; i < matriz.length; i++){
                     for(int b = 0; b < matriz[i].length; b++){
-                        System.out.print(b);
                         if(matriz[i][b] == 1){
-                            System.out.print(i +"| X \t");
+                            System.out.print("X \t");
                         } else if(matriz[i][b] == 2){
-                            System.out.print(i +"| O \t");
+                            System.out.print("O \t");
                         } else{
-                            System.out.print(i +"| - \t");
+                            System.out.print("- \t");
                         }
                     }
                     System.out.println("");
