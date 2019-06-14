@@ -11,4 +11,9 @@ public class operacaoAvancadas {
         return soma;
     }
     
+    public double raizQuadrada(double a){
+        double soma = Math.sqrt(a);
+        return soma;
+    }
+    
 }
