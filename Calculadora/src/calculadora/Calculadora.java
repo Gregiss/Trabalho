@@ -1,14 +1,16 @@
 package calculadora;
 
 import java.util.Scanner;
+import operacao.operacaoAvancadas;
 import operacao.operacaoBasica;
 
 public class Calculadora {
 
     public static void main(String[] args) {
         operacaoBasica op = new operacaoBasica();
+        operacaoAvancadas av = new operacaoAvancadas();
         Scanner leia = new Scanner(System.in);
-        System.out.print("Oque você quer fazer? \n 1 - Somar\n2 - Multiplicar\n3- Subtrair\n4- Divisão\n");
+        System.out.print("Oque você quer fazer? \n 1 - Somar\n2 - Multiplicar\n3- Subtrair\n4- Divisão\n5- Potencial\n");
         int escolha = leia.nextInt();
         System.out.println("Qual o número um?");
         double num1 = leia.nextInt();
@@ -28,6 +30,8 @@ public class Calculadora {
             case 4:
                 resultado = op.dividir(num1, num2);
                 break;
+            case 5:
+                resultado = av.potencial(num1, num2);
             default:
                 break;
         }
